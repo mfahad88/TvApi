@@ -24,7 +24,7 @@ include_once '../config/Database.php';
         $obj=array();
         while($row = $result->fetch_assoc()) {
             $c=new Category();
-            $c->cat_Id=$row["cat_id"];
+            $c->cat_id=$row["cat_id"];
 //             $c->region_id=$row["region_id"];
             $c->name=$row["name"];
             $c->Created_date=$row["created_date"];
